@@ -71,12 +71,12 @@ BEGIN
         BEGIN
             VALUE "Comments", "see https://github.com/asmichi/kb-ascii-mml"
             VALUE "FileDescription", "ASCII music.com MML player (powered by cisc's fmgen library)"
-            VALUE "FileVersion", "0, 8, 0, 0"
+            VALUE "FileVersion", "0, 9, 0, 0"
             VALUE "InternalName", "kbAsciiMml"
             VALUE "LegalCopyright", "Copyright (C) asmichi, cisc"
             VALUE "OriginalFilename", "kbAsciiMml.dll"
             VALUE "ProductName", "kbAsciiMml"
-            VALUE "ProductVersion", "0, 8, 0, 0"
+            VALUE "ProductVersion", "0, 9, 0, 0"
         END
     END
     BLOCK "VarFileInfo"
