@@ -537,7 +537,13 @@ namespace MusicCom
                 {
                     ostringstream ss;
                     ss << filename << "(" << state.LineNumber << ") : parse error at \"";
-                    iterator_t i = find_if(info.stop, last, iscntrl);
+                    iterator_t i = find_if(
+                        info.stop,
+                        last,
+                        [](char c)
+                        {
+                            return iscntrl(static_cast<unsigned char>(c)) != 0;
+                        });
                     copy(info.stop, i, ostream_iterator<char>(ss));
                     ss << "\"" << endl;
                     MessageBoxA(NULL, ss.str().c_str(), "エラー", MB_OK);
