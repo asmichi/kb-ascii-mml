@@ -542,7 +542,7 @@ namespace MusicCom
                         last,
                         [](char c)
                         {
-                            return iscntrl(static_cast<unsigned char>(c)) != 0;
+                            return c == '\r' || c == '\n';
                         });
                     copy(info.stop, i, ostream_iterator<char>(ss));
                     ss << "\"" << endl;
